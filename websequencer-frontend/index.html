@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width user-scalable=no">
+    <title>WebSequencer</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="renderer.js"></script>
+    <script src="transport.js"></script>
+    <script src="equalTemperament.js"></script>
+    <script src="synthesizer.js"></script>
+
+    <!-- <script src="metronome.js"></script> -->
+  </head>
+  <body>
+    <div id="controls">
+      <div id="tempoBox"><span id="showTempo">120</span> BPM <br> <input id="tempo" type="range" min="30.0" max="200.0" step="1" value="120" style="height: 20px; width: 200px" onInput="bpm = event.target.value; document.getElementById('showTempo').innerText=bpm;"></div>
+      <div id="cutoffBox"><span id="showCutoff"> 120 </span> hz <br> <input id="cutoff" type="range" min="33.0" max="5000.0" step="1" value="120" style="height: 20px; width: 200px" onInput="filterFreq = event.target.value; document.getElementById('showCutoff').innerText=filterFreq;"></div>
+      <div><a class="play" onclick="this.innerText = play();">play</a></div>
+    </div>
+  </body>
+</html>

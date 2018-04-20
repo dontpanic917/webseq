@@ -1,0 +1,56 @@
+#controls * {
+	margin: 5px;
+	display:inline-block;
+
+}
+
+.play {
+	padding:8px 24px;
+	width: 80px;
+	text-align: center;
+}
+
+.play:hover {
+	color:#ffffff;
+	background-color:#378de5;
+}
+.nullStep{
+	background-color: white;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+}
+.activeStep{
+	background-color: #4CAF50;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+}
+.populatedStep{
+	background-color: blue;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+}
+
+.play:active {
+	position:relative;
+	top:1px; left: 1px;
+}
+
+#showTempo {
+	display: inline-block;
+	width: 45px;
+}
